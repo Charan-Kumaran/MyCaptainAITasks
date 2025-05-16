@@ -1,0 +1,11 @@
+import numpy as np
+length = int(input("Enter the length of the array: "))
+posArr = []
+for i in range(length):
+    num = int(input(f"Enter element {i + 1}: "))
+    posArr.append(num)
+posArr = np.array(posArr)
+print("\n**The Positive Numbers in this posArr Array***")
+for num in posArr:
+    if num >= 0:
+        print(num, end="  ")
